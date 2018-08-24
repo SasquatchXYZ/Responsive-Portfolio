@@ -79,6 +79,9 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+    /* Animation */
+    animation-name: seeme;
+    animation-duration: 5s;
 }
 
 nav {
@@ -218,7 +221,21 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+    /* Animation on Hover */
+    opacity: 0.5;
+    transition: 0.3s;
 }
+input[type=submit]:hover {
+    opacity: 1;
+}
+/* Animation Keyframes */
+@keyframes seeme {
+    from {background-color: #4aaaa5;}
+    to {background-color: #fff;}
+    from {color: #fff;}
+    to {color: #4aaaa5;}
+}
+
 /* Media Queries */
 @media screen and (min-width: 769px) and (max-width: 980px) {
     nav a:last-child {
